@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		DA2C3AC920314FD000E906F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3AC820314FD000E906F9 /* AppDelegate.swift */; };
 		DA2C3ACB20314FD000E906F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3ACA20314FD000E906F9 /* ViewController.swift */; };
-		DA2C3ACE20314FD000E906F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2C3ACC20314FD000E906F9 /* Main.storyboard */; };
 		DA2C3AD020314FD000E906F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2C3ACF20314FD000E906F9 /* Assets.xcassets */; };
 		DA2C3AD320314FD000E906F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2C3AD120314FD000E906F9 /* LaunchScreen.storyboard */; };
+		DA2C3ADB20315BCE00E906F9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3ADA20315BCE00E906F9 /* MainTabBarController.swift */; };
+		DA2C3ADD20315ED300E906F9 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3ADC20315ED300E906F9 /* DateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA2C3AC520314FD000E906F9 /* Nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2C3AC820314FD000E906F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA2C3ACA20314FD000E906F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA2C3ACD20314FD000E906F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA2C3ACF20314FD000E906F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2C3AD220314FD000E906F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2C3AD420314FD000E906F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2C3ADA20315BCE00E906F9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DA2C3ADC20315ED300E906F9 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 			children = (
 				DA2C3AC820314FD000E906F9 /* AppDelegate.swift */,
 				DA2C3ACA20314FD000E906F9 /* ViewController.swift */,
-				DA2C3ACC20314FD000E906F9 /* Main.storyboard */,
 				DA2C3ACF20314FD000E906F9 /* Assets.xcassets */,
 				DA2C3AD120314FD000E906F9 /* LaunchScreen.storyboard */,
 				DA2C3AD420314FD000E906F9 /* Info.plist */,
+				DA2C3ADA20315BCE00E906F9 /* MainTabBarController.swift */,
+				DA2C3ADC20315ED300E906F9 /* DateViewController.swift */,
 			);
 			path = Nasa;
 			sourceTree = "<group>";
@@ -125,7 +128,6 @@
 			files = (
 				DA2C3AD320314FD000E906F9 /* LaunchScreen.storyboard in Resources */,
 				DA2C3AD020314FD000E906F9 /* Assets.xcassets in Resources */,
-				DA2C3ACE20314FD000E906F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +138,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2C3ADD20315ED300E906F9 /* DateViewController.swift in Sources */,
 				DA2C3ACB20314FD000E906F9 /* ViewController.swift in Sources */,
 				DA2C3AC920314FD000E906F9 /* AppDelegate.swift in Sources */,
+				DA2C3ADB20315BCE00E906F9 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA2C3ACC20314FD000E906F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA2C3ACD20314FD000E906F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA2C3AD120314FD000E906F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S2R3M45L8;
 				INFOPLIST_FILE = Nasa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dpaulb.Nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S2R3M45L8;
 				INFOPLIST_FILE = Nasa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dpaulb.Nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
