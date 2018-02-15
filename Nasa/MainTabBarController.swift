@@ -12,6 +12,8 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().tintColor = UIColor.white
+        UITabBar.appearance().barTintColor = UIColor.black
         let viewController = ViewController()
         let dateViewController = DateViewController()
         let viewControllerList = [viewController, dateViewController]
