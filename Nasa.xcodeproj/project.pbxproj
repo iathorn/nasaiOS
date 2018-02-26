@@ -13,6 +13,7 @@
 		DA2C3AD320314FD000E906F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2C3AD120314FD000E906F9 /* LaunchScreen.storyboard */; };
 		DA2C3ADB20315BCE00E906F9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3ADA20315BCE00E906F9 /* MainTabBarController.swift */; };
 		DA2C3ADD20315ED300E906F9 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3ADC20315ED300E906F9 /* DateViewController.swift */; };
+		DA7B7D79204393C5002A7B31 /* DetailDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B7D78204393C5002A7B31 /* DetailDateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA2C3AD420314FD000E906F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2C3ADA20315BCE00E906F9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DA2C3ADC20315ED300E906F9 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		DA7B7D78204393C5002A7B31 /* DetailDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DA2C3AD420314FD000E906F9 /* Info.plist */,
 				DA2C3ADA20315BCE00E906F9 /* MainTabBarController.swift */,
 				DA2C3ADC20315ED300E906F9 /* DateViewController.swift */,
+				DA7B7D78204393C5002A7B31 /* DetailDateViewController.swift */,
 			);
 			path = Nasa;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				DA2C3ADD20315ED300E906F9 /* DateViewController.swift in Sources */,
 				DA2C3ACB20314FD000E906F9 /* ViewController.swift in Sources */,
 				DA2C3AC920314FD000E906F9 /* AppDelegate.swift in Sources */,
+				DA7B7D79204393C5002A7B31 /* DetailDateViewController.swift in Sources */,
 				DA2C3ADB20315BCE00E906F9 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

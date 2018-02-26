@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //        window?.rootViewController = UINavigationController(rootViewController: initViewController)
+
         window?.rootViewController = MainTabBarController()
         
         return true

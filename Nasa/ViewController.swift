@@ -246,6 +246,10 @@ class ViewController: UIViewController {
                     
                     print(nasaResult.date)
                     
+                    
+                
+                    
+                    
                     self.apiDate = dateFormatter.date(from: nasaResult.date)!
                     
                     //                DispatchQueue.main.async {
@@ -343,9 +347,15 @@ class ViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         //
+
         
-        
-        guard Date(timeInterval: 60 * 60 * 24, since: self.apiDate) <= dateFormatter.date(from: self.serverTime)! else {
+        guard self.serverTime != "", Date(timeInterval: 60 * 60 * 24, since: self.apiDate) <= dateFormatter.date(from: self.serverTime)! else {
+            let alert = UIAlertController(title: "오류", message: "날짜에 맞는 데이터가 없습니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
             return
         }
         //        if Date(timeInterval: 60 * 60 * 24, since: self.apiDate) > Date() {
